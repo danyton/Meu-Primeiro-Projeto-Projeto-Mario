@@ -4,20 +4,19 @@ const video = document.getElementById("video");
 const modal = document.querySelector(".modal");
 const linkDoVideo = video.src;
 
-function altrenarModal(){
+function alternarModal(){
     modal.classeList.toggle("aberto");
 }
 
-botaoTrailer.addEventListener("click", ()=>{
-    atrenarModal(); 
-    video.setAttribute("src", linkDoVideo);
+botaoTrailer.addEventListener("click",()=>{
+    alternarModal(); 
+    video.setAttribute("src",linkDoVideo);
 }); 
 
-botaoFecharModal.addEventListener("click",() =>{
-    atrenarModal();
+botaoFecharModal.addEventListener("click",()=>{
+    alternarModal();
 video.setAttribute("src","");
 })
-
 
  
     
