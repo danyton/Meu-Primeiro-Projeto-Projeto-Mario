@@ -5,18 +5,18 @@ const modal = document.querySelector(".modal");
 const linkDoVideo = video.src;
 
 function alternarModal(){
-    modal.classeList.toggle("aberto");
+    modal.classList.toggle("aberto");
 }
 
-botaoTrailer.addEventListener("click",()=>{
+botaoTrailer.addEventListener("click", () => {
     alternarModal(); 
-    video.setAttribute("src",linkDoVideo);
+    video.setAttribute("src", linkDoVideo);
 }); 
 
-botaoFecharModal.addEventListener("click",()=>{
+botaoFecharModal.addEventListener("click", () => {
     alternarModal();
-video.setAttribute("src","");
-})
+video.setAttribute("src", "");
+});
 
  
     
